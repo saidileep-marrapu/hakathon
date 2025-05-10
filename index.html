@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Minister's Special Scholarship Scheme</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://www.nshm.com/wp-content/uploads/2024/06/Scholarship.webp') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .header img {
+            height: 50px;
+        }
+        .header .login {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            text-align: center;
+            margin-top: 150px;
+        }
+        .content h1 {
+            font-size: 50px;
+            color: orange;
+            margin: 0;
+        }
+        .content h2 {
+            font-size: 40px;
+            margin: 10px 0;
+        }
+        .content p {
+            font-size: 20px;
+        }
+        .content a {
+            color: lightgreen;
+            text-decoration: none;
+        }
+        .signup-button {
+            background-color: green;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none; /* Removes underline */
+            display: inline-block; /* Makes the button look like a block */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img alt="Government of India Logo" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Government_of_India_logo.svg" width="150" height="180" />
+        <a class="login" href="login.html">Login</a>
+    </div>
+    <div class="content">
+        <h1>WELCOME TO</h1>
+        <h2>The Prime Minister's Special Scholarship Scheme</h2>
+        <p>To Create a new account? <a href="#">Click here</a></p>
+        <!-- Update form to route via servlet -->
+        <form action="signup.html"> <!-- change method to 'get' if you don't want to process data on the signup page -->
+            <button class="signup-button" type="submit" >Sign Up</button> <!-- use type 'submit' to send the request to the servlet -->
+        </form>
+    </div>
+</body>
+</html>
